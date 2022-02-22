@@ -33,9 +33,9 @@ SECRET_KEY = 'django-insecure-92afh08n@@l-^4wy(vilv3l6o#$u&26+-#1bdd#kf0ylu3@o%&
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-DEBUG = env('DEBUG')
+# DEBUG = env('DEBUG')
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', '0.0.0.0',]
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', '0.0.0.0', 'obiihej.herokuapp.com']
 
 
 # Application definition
@@ -47,9 +47,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    
+
     'portfolio',
-    ]
+]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
