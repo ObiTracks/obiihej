@@ -4,15 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Obi I</title>
 </head>
 <body>
-
     {% block menu %}
+        <a href={% url "portfolio" %}>Portfolio</a>
     {% endblock menu %}
-    
+
     {% block content %}
+        {% for project in projects %}
+            <span>{{project.name}}</span>
+        {% endfor %}
     {% endblock content %}
-    
+
 </body>
 </html>

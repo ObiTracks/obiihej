@@ -1,6 +1,13 @@
+{% extends 'base.html' %}
 {% load static %}
 
 {% block content %}
-<div></div>
+    <form action="{% url 'portfolio' %}" method="POST" >
+        {% csrf_token %}
+        {{form.as_ul}}
+        <button>Save</button>
+    </form>
+    <span>{{messages.0}}</span>
 
+    {{projects.first.name}}
 {% endblock content %}
