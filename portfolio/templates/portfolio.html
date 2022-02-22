@@ -9,5 +9,7 @@
     </form>
     <span>{{messages.0}}</span>
 
-    {{projects.first.name}}
+    {% if projects %}
+        {{projects.first.name}}
+    {% endif %}
 {% endblock content %}

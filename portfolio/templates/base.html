@@ -12,9 +12,11 @@
     {% endblock menu %}
 
     {% block content %}
-        {% for project in projects %}
-            <span>{{project.name}}</span>
-        {% endfor %}
+        {% if projects %}
+            {% for project in projects %}
+                <span>{{project.name}}</span>
+            {% endfor %}
+        {% endif %}
     {% endblock content %}
 
 </body>
